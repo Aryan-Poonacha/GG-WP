@@ -1,2 +1,14 @@
-# GG-WP
-An app made during school hours of 16th November, as a meme for PD, who says GG WP all the time.
+# A Blank PhoneGap App
+
+## Usage
+
+### PhoneGap CLI
+
+    $ phonegap create my-app --template blank
+
+### Desktop
+
+In your browser, open the file:
+
+    /www/index.html
+
