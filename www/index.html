@@ -1,0 +1,40 @@
+<!DOCTYPE html5>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="thecss.css" rel="stylesheet" type="text/css" />
+  <title>
+    GG WP
+  </title>
+</head>
+
+<body id="body" style="cursor : url('cursor.cur'), default">
+
+  <div class="container-fluid">
+  <script type="text/javascript" src="cordova.js"></script>
+
+  <img class="img-responsive" src="button.png" id="button"></img>
+
+  <script>
+  var audio = new Audio("gg.mp3");
+  var audio2 = new Audio("wp.mp3");
+  $(document).ready( function() {
+    $("#button").mousedown( function() {
+      audio.play();
+      $(this).attr("src", "button_pressed.png");
+    });
+    $("#button").mouseup( function() {
+      audio2.play();
+      $(this).attr("src", "button.png");
+    });
+  });
+  </script>
+
+</div>
+</body>
+</html>
