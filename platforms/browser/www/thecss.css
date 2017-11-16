@@ -1,0 +1,28 @@
+body
+{
+  background-color: black;
+  cursor:url('cursor.cur');
+  background-image: url('bg4.jpg');
+}
+
+#button
+{
+  position: absolute;
+  margin: auto;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+}
+
+#button_clicked
+{
+
+}
+
+*::selection {
+    color:transparent;
+}
+*::-moz-selection {
+    color:transparent;
+}
